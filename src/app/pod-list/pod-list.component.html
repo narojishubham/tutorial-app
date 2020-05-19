@@ -1,0 +1,11 @@
+<h2>top 10 pods </h2>
+<div class="grid grid-pad">
+  <div *ngFor="let pod of pods">
+    <div class="col-1-4">
+    <h3>  {{ pod.title }} </h3>
+      <img src={{pod.image}} >
+      <p *ngIf="pod.discription">
+        Description: {{ pod.discription }} </p>
+    </div>
+  </div>  
+</div>  
